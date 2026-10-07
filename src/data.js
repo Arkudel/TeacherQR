@@ -1,0 +1,19 @@
+// Editable lists: booking services, paper sizes, colors and center pictures.
+var DEST=[
+ {id:"gcal",name:"Google Calendar",ph:"https://calendar.google.com/calendar/appointments/schedules/…",hint:"Paste the booking-page link from Google Calendar (an appointment schedule), or your calendar's public link.",host:/google\.com|goo\.gl/i},
+ {id:"cal",name:"Calendly",ph:"https://calendly.com/your-name",hint:"Paste your Calendly scheduling link.",host:/calendly\.com/i},
+ {id:"custom",name:"Custom link",ph:"https://",hint:"Any web address works.",host:null}
+];
+var SIZES=[["letter","US Letter (8.5 × 11 in)",215.9,279.4],["legal","US Legal (8.5 × 14 in)",215.9,355.6],["tabloid","Tabloid (11 × 17 in)",279.4,431.8],["a5","A5 (148 × 210 mm)",148,210],["a4","A4 (210 × 297 mm)",210,297],["a3","A3 (297 × 420 mm)",297,420]];
+var QRC=[["Mint","#1c8a6e"],["Ink","#16202b"],["Forest","#1f6b3a"],["Navy","#1d3b72"],["Royal blue","#2447c0"],["Plum","#6b2d7a"],["Crimson","#a3232f"],["Burnt orange","#b5501a"],["Brown","#5a3b24"],["Black","#000000"]];
+var BGC=[["White","#ffffff"],["Mint","#d6f3e8"],["Cream","#fbf3dc"],["Sky","#d8ecfb"],["Lavender","#e6dcf7"],["Blush","#fbdfe6"],["Butter","#fff3b0"],["Peach","#fde0cc"],["Lime","#e4f5c8"],["Light gray","#e9ecef"]];
+var IMGS=[
+ ["corgi","Corgi",'<polygon points="14,10 40,30 12,48" fill="#e8933a"/><polygon points="86,10 60,30 88,48" fill="#e8933a"/><polygon points="19,20 34,31 18,41" fill="#f6c99a"/><polygon points="81,20 66,31 82,41" fill="#f6c99a"/><ellipse cx="50" cy="57" rx="35" ry="31" fill="#e8933a"/><path d="M50 30C41 44 37 60 30 74Q50 92 70 74C63 60 59 44 50 30Z" fill="#fff"/><circle cx="37" cy="54" r="4.5" fill="#222"/><circle cx="63" cy="54" r="4.5" fill="#222"/><ellipse cx="50" cy="68" rx="6.5" ry="4.8" fill="#222"/><path d="M50 72v5M43 79q7 6 14 0" stroke="#222" stroke-width="2.4" fill="none" stroke-linecap="round"/><ellipse cx="50" cy="84" rx="5" ry="3" fill="#f06a7a"/>'],
+ ["cat","Cat",'<polygon points="14,8 42,28 12,48" fill="#9aa3b2"/><polygon points="86,8 58,28 88,48" fill="#9aa3b2"/><polygon points="20,20 35,30 19,40" fill="#f4b8c4"/><polygon points="80,20 65,30 81,40" fill="#f4b8c4"/><ellipse cx="50" cy="58" rx="36" ry="31" fill="#9aa3b2"/><path d="M42 30l2 9M50 28v10M58 30l-2 9" stroke="#6f7888" stroke-width="3" stroke-linecap="round"/><ellipse cx="37" cy="54" rx="6" ry="7" fill="#9be08a"/><ellipse cx="63" cy="54" rx="6" ry="7" fill="#9be08a"/><ellipse cx="37" cy="54" rx="2" ry="6" fill="#222"/><ellipse cx="63" cy="54" rx="2" ry="6" fill="#222"/><polygon points="45,66 55,66 50,72" fill="#f06a8a"/><path d="M50 72q-4 7-10 5M50 72q4 7 10 5" stroke="#444" stroke-width="2" fill="none" stroke-linecap="round"/><path d="M8 64l20 3M8 74l20-2M92 64l-20 3M92 74l-20-2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>'],
+ ["apple","Apple",'<path d="M50 30C30 18 10 34 14 58C18 80 36 92 50 86C64 92 82 80 86 58C90 34 70 18 50 30Z" fill="#d7373f"/><path d="M50 30Q50 18 56 10" stroke="#6b3b1d" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M54 26C56 14 66 8 78 10C76 22 66 30 54 26Z" fill="#3a9d4a"/>'],
+ ["book","Book",'<rect x="12" y="20" width="76" height="60" rx="6" fill="#3b6fd4"/><rect x="19" y="27" width="62" height="46" rx="2" fill="#fff"/><path d="M50 27v46" stroke="#3b6fd4" stroke-width="3"/><path d="M26 38h18M26 48h18M26 58h14M56 38h18M56 48h18M56 58h14" stroke="#9aa9c8" stroke-width="3" stroke-linecap="round"/>'],
+ ["star","Star",'<polygon points="50,7 62,37 94,38 69,58 78,90 50,71 22,90 31,58 6,38 38,37" fill="#f4b400" stroke="#d99700" stroke-width="3" stroke-linejoin="round"/>'],
+ ["heart","Heart",'<path d="M50 88C8 58 8 22 32 18C42 16 48 22 50 29C52 22 58 16 68 18C92 22 92 58 50 88Z" fill="#e0457b"/><path d="M26 32q4-8 12-6" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" opacity=".6"/>']
+];
+
+export { DEST, SIZES, QRC, BGC, IMGS };
